@@ -22,15 +22,7 @@ request.get(geocodingUrl, (error, response, body) => {
                 `humidity: ${darkSkyJson.currently.humidity}`,
                 `wind speed: ${darkSkyJson.currently.windSpeed}`
             );
-            let weather = 'Now in ' +
-                geocodingJson.results[0].address_components[0].long_name +
-                ' ' + darkSkyJson.currently.icon +
-                ' with temperature: ' +
-                darkSkyJson.currently.temperature +
-                ', humidity: ' +
-                darkSkyJson.currently.humidity +
-                ', and wind speed: ' +
-                darkSkyJson.currently.windSpeed + ' .';
+                let weather = `Now ${darkSkyJson.currently.icon} with temperature: ${darkSkyJson.currently.temperature}, humidity: ${darkSkyJson.currently.humidity} , and wind speed: ${darkSkyJson.currently.windSpeed} .`;
             fs.writeFile("./weather.txt", weather, function(err) {
                 if (err) {
                     return console.log(err);
