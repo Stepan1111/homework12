@@ -1,1 +1,0 @@
-Now  rain with temperature: 48.94, humidity: 0.91 , and wind speed: 7.41 .
