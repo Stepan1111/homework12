@@ -1,0 +1,24 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "weather.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node weather.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stepan1111/homework12.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stepan1111/homework12/issues"
+  },
+  "homepage": "https://github.com/Stepan1111/homework12#readme",
+  "dependencies": {
+    "yargs": "^11.0.0"
+  }
+}
